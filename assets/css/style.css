@@ -1,0 +1,325 @@
+:root{
+  --md-sys-color-background: #21103a;
+  --md-sys-color-on-background: #fff;
+  --md-sys-color-on-surface: #E0E0E0;
+  --base-body-font: 'DM Sans', sans-serif;
+  --container-box-width: 1216px;
+  --md-sys-color-on-accent: #141414;
+  --md-sys-color-outline: #34373B;
+  --md-sys-color-black: #0e1417;
+}
+body {
+  background: var(--md-sys-color-background);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: var(--md-sys-color-on-background);
+  font-family: var(--base-body-font);
+}
+.text-on-surface {
+  color: var(--md-sys-color-on-surface);
+}
+.font-size-20 {
+  font-size: 20px;
+}
+.header .navbar-nav {
+  gap: 45px;
+}
+.container {
+  max-width: var(--container-box-width);
+}
+.font-size-14 {
+  font-size: 14px;
+}
+.wrapper {
+  padding-top: 48px;
+}
+.header ul li a:hover {
+  color: #E48B05;
+}
+.font-size-32 {
+    font-size: 32px;
+}
+.allBtn {
+  min-width: 64px;
+  background: linear-gradient(180deg,#1ac315 0,#074f05 100%);
+  box-shadow: none;
+  border-radius: 40px;
+  outline: none;
+  color: #fff;
+  transition: 0.3s ease all;
+  min-height: 60px;
+  min-width: 140px;
+}
+.btn-outer-bg {
+  animation: move-shine 3s infinite;
+  z-index: 4;
+}
+.btn-outer-bg::after {
+  background: #fff;
+  content: "";
+  display: block;
+  filter: blur(12px);
+  height: 200%;
+  left: 0;
+  opacity: .7;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+@keyframes move-shine {
+  0% {
+  transform: scale(2) rotate(16deg);
+}
+100% {
+  transform: scale(2) rotate(16deg) translateX(100%);
+}
+}
+
+.form-login input {
+  border: 2px solid #fff !important;
+  min-height: 64px;
+  border-radius: 8px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  outline: none !important;
+  box-shadow: none !important;
+  color: #fff !important;
+}
+.form-login input::placeholder {
+  opacity: 1;
+  color: #616466;
+}
+.certified-icon {
+  width: 77px;
+  color: #fbbb10;
+}
+.banner-shap {
+  z-index: 0;
+  width: 480px;
+  left: -42px;
+  opacity: .4;
+}
+.banner-shap .position-relative {
+  padding-bottom: 92.66%;
+  width: 100%;
+}
+.pt-72{
+  padding-top: 72px;
+}
+.pb-72{
+  padding-bottom: 72px;
+}
+.banner .carousel-indicators button {
+  background: #fff !important;
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 50%;
+  padding: 0 !important;
+  border: 0 !important;
+}
+.slideList li {
+  font-size: 24px;
+  list-style-type: disc;
+  list-style-position: inside;
+/*  text-indent: -1.3em;*/
+  opacity: 0.72;
+  padding-bottom: 12px;
+}
+.slideList {
+  padding-left: 15px;
+}
+.slide-banner-after-content {
+  padding: 36px;
+}
+.slide-banner-after .carousel-indicators button {
+  height: 4px;
+  width: 125px;
+  border-radius: 8px;
+  opacity: 0.2;
+  border: 0 !important;
+  background: #fff;
+}
+.slide-banner-after .carousel-indicators button.active {
+  background: #1ac315;
+  opacity: 1;
+}
+.all-certified-block {
+  background: var(--md-sys-color-black);
+}
+.footer {
+  background: var(--md-sys-color-black);
+}
+a {
+  text-decoration: none;
+}
+.font-size-16 {
+  font-size: 16px;
+}
+.social-media {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social-media a {
+  background: #ffffff1c;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+}
+.social-media {
+  gap: 8px;
+}
+.fixed-header {
+  background: var(--md-sys-color-background) !important;
+  z-index: 99;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.account-option-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.account-option-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background: var(--md-sys-color-black);
+  margin: 0;
+  padding: 0px 15px !important;
+  border-radius: 26px;
+}
+.account-option-list li a {
+  padding: 6px 12px;
+  border-right: 1px solid #E0E0E012;
+  display: block;
+}
+.afterlogin-nav .navbar-nav {
+  gap: 5px;
+}
+.balance-nav {
+  font-size: 14px;
+  color: rgba(219,213,228,.729);
+}
+.balance-nav strong {
+  display: block;
+  color: #fff;
+}
+.userProfile-nav i {
+  background: var(--md-sys-color-black);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  border: 1px solid #ffffff3d;
+}
+.userProfile-nav a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.offcanvasMenu-block {
+  
+  max-width: 300px;
+  box-shadow: 0 8px 10px -5px rgba(0,0,0,.2),0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12);
+  box-shadow: 0 0 10px #000;
+}
+.btn-close {
+  opacity: 1;
+}
+.loginMenuoffcanvas .header-navbar-top li {
+  border: 0;
+}
+.loginMenuoffcanvas li {
+  display: block;
+  width: 100%;
+}
+.loginMenuoffcanvas .header-navbar-top li a {
+  padding: 10px 22px !important;
+  letter-spacing: 1px;
+  color: #000;
+}
+.dropdown-menu-custome li a i {
+  margin-right: 10px;
+  color: #000;
+}
+.box-block {
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+}
+.box-title, .box-sub-title {
+  color: #000;
+  font-size: 26px;
+  margin-bottom: 0;
+  font-weight: 600;
+  
+}
+.box-block hr {
+  height: 1px;
+  background: #dee2e6;
+  opacity: 1;
+  border: 0;
+}
+.payOption label {
+  font-size: 14px;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.payOption label::before, .payOption label::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+.payOption input:checked ~ label::before {
+  border-color: #c72b2c;
+}
+.payOption input:checked ~ label::after {
+  border: 0;
+  background: #c72b2c;
+  width: 7px;
+  height: 7px;
+  left: 4px;
+  top: 8px;
+}
+.payOption input:checked ~ label {
+  color: #c72b2c !important;
+}
+.deposit-nav a , .instant-nav a{
+  background: url('../img/fill-button-2.svg') 0 0/100% 100% no-repeat;
+  color: #000;
+  min-width: 8rem;
+  text-align: center;
+}
+/*.instant-nav a {
+  background: url('../img/belt-border-2.svg') 0 0/100% 100% no-repeat;
+  color: #fff;
+}*/
+.header ul li a:focus {
+  color: #fff;
+}
+.testimonial .carousel-item {
+  background: var(--md-sys-color-black);
+  border-radius: 5px;
+  padding: 30px;
+  min-height: 267px;
+}
+.testimonial .testimonial-des {
+  margin: 15px 0;
+  margin-bottom: 10px;
+}
