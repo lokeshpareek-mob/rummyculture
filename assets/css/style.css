@@ -1,5 +1,6 @@
 :root{
-  --md-sys-color-background: #21103a;
+  --md-sys-color-background: #292601;
+  --md-sys-color-body: #000;
   --md-sys-color-on-background: #fff;
   --md-sys-color-on-surface: #E0E0E0;
   --base-body-font: 'DM Sans', sans-serif;
@@ -7,9 +8,10 @@
   --md-sys-color-on-accent: #141414;
   --md-sys-color-outline: #34373B;
   --md-sys-color-black: #0e1417;
+  --md-title-color: #ffff0c;
 }
 body {
-  background: var(--md-sys-color-background);
+  background: var(--md-sys-color-body);
   overflow-y: scroll;
   overflow-x: hidden;
   color: var(--md-sys-color-on-background);
@@ -140,7 +142,7 @@ body {
   background: #fff;
 }
 .slide-banner-after .carousel-indicators button.active {
-  background: #1ac315;
+  background: #ff344d;
   opacity: 1;
 }
 .all-certified-block {
@@ -175,7 +177,7 @@ a {
   gap: 8px;
 }
 .fixed-header {
-  background: var(--md-sys-color-background) !important;
+  background: var(--md-sys-color-body) !important;
   z-index: 99;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -227,7 +229,7 @@ a {
   font-size: 14px;
 }
 .offcanvasMenu-block {
-  
+  background: var(--md-sys-color-black);
   max-width: 300px;
   box-shadow: 0 8px 10px -5px rgba(0,0,0,.2),0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12);
   box-shadow: 0 0 10px #000;
@@ -245,11 +247,11 @@ a {
 .loginMenuoffcanvas .header-navbar-top li a {
   padding: 10px 22px !important;
   letter-spacing: 1px;
-  color: #000;
+  color: #fff;
 }
 .dropdown-menu-custome li a i {
   margin-right: 10px;
-  color: #000;
+  color: #fff;
 }
 .box-block {
   background: #fff;
@@ -322,4 +324,206 @@ a {
 .testimonial .testimonial-des {
   margin: 15px 0;
   margin-bottom: 10px;
+}
+.header .navbar-toggler {
+  border: 0;
+  filter: invert(100%);
+  opacity: 1;
+  padding: 0;
+}
+.mybtn1 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 14px 35px;
+  display: inline-block;
+  color: #fff;
+  border: 0px;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff344d), to(#d2273c));
+  background-image: -webkit-linear-gradient(right, #ff344d, #d2273c);
+  background-image: -o-linear-gradient(right, #ff344d, #d2273c);
+  background-image: linear-gradient(to left, #ff344d, #d2273c);
+}
+.topbottomAni {
+  animation: manAni 3s linear infinite;
+}
+.image {
+  max-width: 100%;
+}
+
+@keyframes manAni {
+  0% {
+  margin: 0px;
+}
+33% {
+  margin-top: 5px;
+}
+66% {
+  margin-top: -5px;
+}
+100% {
+  margin: 0px;
+}
+}
+.after-login {
+  padding-top: 74px;
+}
+.after-login .banner {
+  background: var(--md-sys-color-black);
+}
+.single-game {
+  height: 270px;
+  display: block;
+  line-height: 300px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%);
+  box-shadow: 0px 10px 15px 0px rgb(0 0 0 / 40%);
+  position: relative;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background: var(--md-sys-color-black);
+}
+.featured-game .game-slider .item .single-game {
+  margin: 15px 15px 40px;
+}
+.mybtn2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 50px;
+  line-height: 50px;
+  width: 190px;
+  display: inline-block;
+  color: #fff;
+  border: 0px;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background-image: linear-gradient(to left, #ff344d, #d2273c);
+}
+.my {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.625;
+  position: relative;
+  margin-top: 0 !important;
+}
+.single-game .mybtn2 {
+  position: absolute;
+  display: block;
+  height: 50px;
+  bottom: -25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.4);
+}
+.single-game .mybtn2 {
+  position: absolute;
+  display: block;
+  height: 50px;
+  bottom: -24px;
+  background: #292601;
+}
+.game-slider .item .single-game {
+  margin: 15px 15px 40px;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D675;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity .2s ease;
+  border-radius: 30px;
+}
+.single-game:hover {
+  border-color: #681f40;
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.game-slider .owl-nav, .rewarding-block .owl-nav {
+  display: none;
+}
+.game-slider .owl-dots, .rewarding-block .owl-dots {
+  text-align: center;
+}
+.user-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.user-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #ffffff3d;
+}
+.userName p {
+  line-height: normal;
+}
+.loginMenuoffcanvas .btn-close {
+  filter: invert(100%);
+  outline: none;
+  box-shadow: none;
+}
+.rewarding-block .owl-dots {
+  margin-top: 15px;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #fff;
+}
+.rewarding-block img {
+  border-radius: 4px;
+}
+.mainTitle {
+  font-size: 70px;
+  line-height: 70px;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  letter-spacing: 1px;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 0 0 4px #fef100;
+}
+.title {
+  font-size: 34px;
+  line-height: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--md-title-color);
+  margin-bottom: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.subTitle {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  background: -webkit-linear-gradient(to left, #ff344d, #d2273c);
+  background: -moz-linear-gradient(to left, #ff344d, #d2273c);
+  background: -ms-linear-gradient(to left, #ff344d, #d2273c);
+  background: -o-linear-gradient(to left, #ff344d, #d2273c);
+  background: -webkit-gradient(linear, right top, left top, from(#ff344d), to(#d2273c));
+  background: -webkit-linear-gradient(right, #ff344d, #d2273c);
+  background: -o-linear-gradient(right, #ff344d, #d2273c);
+  background: linear-gradient(to left, #ff344d, #d2273c);
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Ubuntu', sans-serif;
 }
